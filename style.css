@@ -1,0 +1,274 @@
+
+
+/* Includes CSS for the webpage to help it look good on multiple form factors (go mobile devs!) */
+
+
+
+
+/* ---- GENERAL ---- */
+
+/* mostly general purpose CSS used throughout the webpage */
+
+@media screen and (max-width:810px) {  
+  img.logo {
+    display: none;
+  }
+}
+
+img.imgCard {
+  border-radius: 5px 5px 0 0;
+}
+
+img.imgCurve {
+  border-radius: 5px 5px 5px 5px;
+  height: 300px;
+  width: 100%;
+}
+
+img.logo {
+  padding-right: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  z-index: 999;
+}
+
+p.ovf {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  color: #aeb0b5;
+}
+
+p.popup {
+  color: #aeb0b5;
+}
+
+p.filter {
+  color: white;
+}
+
+p.title {
+  color: white;
+  font-size: 15px;
+  font-family: "Helvetica", "Sans Serif", sans-serif;
+  z-index: 999;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+  font-family: "Helvetica", "Sans Serif", sans-serif;
+}
+
+html, body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+}
+.demo-card-wide > .mdl-card__menu {
+}
+
+
+
+button.fixedbutton {
+    position: fixed !important;
+    bottom: 8% !important;
+    right: 7% !important;
+}
+
+
+
+
+
+
+/* ---- TOP OF PAGE ---- */
+
+/* CSS used at the top of the page (think title bar, search, etc) */
+
+#searchBar {
+  margin: 15px 10px;
+}
+
+.topBar{
+   background-color:#323a45;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.bar {
+  background-color: #323a45;
+}
+
+.tableWrapper {
+  max-height: auto;
+  overflow: auto;
+}
+
+.search {
+  background-color: blue;
+}
+
+.buttonRightLayout {
+  text-align: right;
+}
+
+.buttonLeftLayout {
+  text-align: left;
+}
+
+.resultCenterLayout {
+  text-align: center;
+}
+
+.noGreyBar {
+    border: 0px !important;
+    border-bottom-color: transparent !important;
+    border-top-color: transparent !important;
+    background-image: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+
+
+
+
+
+
+
+/* ---- MIDDLE OF PAGE ---- */
+
+/* CSS used in the middle of the page (think the grid, cards in the grid, etc) */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  background-color: #323a45;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.97);
+}
+
+.card-container {
+  padding: 2px 16px;
+  width: 100%;
+  float: left;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+
+
+
+
+
+
+
+
+/* ---- GRID ---- */
+
+/* CSS used in the grid (think items and general sizing/layout) */
+
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer {
+  margin-bottom: 50px;
+}
+
+.grid-item {
+  width: 30%;
+  height: 325px;
+  margin-bottom: 50px;
+  margin-left: 1.666666666666667%;
+  margin-right: 1.666666666666667%;
+  float: left;
+  border: 10px;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  height: 200px;
+}
+
+/* Mobile and "Thin Window" Styling */
+@media only screen and (max-width: 640px) {
+
+  .grid-item {
+    width: 43%;
+    height: 50vw;
+    margin-bottom: 50px;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    float: left;
+    border: 10px;
+  }
+
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+    height: 50%;
+  }
+
+}
+
+
+
+
+
+/* ---- MODAL ---- */
+
+/* CSS for the Modals found on the site (think layout, elevation of the modal, etc) */
+
+.modal-content {
+  background-color: #323a45;
+  margin: auto;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-backdrop {
+    z-index: 100000 !important; /* keeps modal above nav bar */
+}
+
+.modal {
+    z-index: 100001 !important; /* keeps modal above nav bar */
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+

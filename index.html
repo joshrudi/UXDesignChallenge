@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>TweetData</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="shortcut icon" type="image/x-icon" href="Twitter.ico" />
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"> <!-- Google Material Design -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Google Material Icons -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> <!-- Google Font -->
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"> <!-- Material Design Lite -->
+	     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/validate.js"></script>
+        <script src="js/login.js"></script>
+
+    </head>
+
+    <body>
+
+
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+
+              <span class="mdl-layout-title">Profile</span>
+
+              <div class="mdl-layout-spacer"></div>
+
+              <nav class="mdl-navigation">
+
+                <button id="appBarHam" class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="appBarHam">
+                  <a>
+                        <li class="mdl-menu__item" onclick="help();">Help</li>
+                  </a>
+                  <a href="index.html">
+                      <li class="mdl-menu__item">Refresh</li>
+                  </a>
+                  <a href="" onclick="signOut();">
+                      <li class="mdl-menu__item">Sign Out</li>
+                  </a>
+                </ul>
+              </nav>
+            </div>
+          </header>
+          <div class="mdl-layout__drawer mdc-drawer">
+            <div class="mdc-drawer__header">
+                <h3 class="mdc-drawer__title">Navigation</h3>
+                <h6 class="mdc-drawer__subtitle">Rudaitis Software</h6>
+            </div>
+            <div class="mdc-drawer__content">
+
+                <nav class="mdc-list">
+                    <a class="mdc-list-item mdc-list-item--activated" href="index.html" aria-current="page">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">account_circle</i>
+                        <span class="mdc-list-item__text">Profile</span>
+                    </a>
+                    <a class="mdc-list-item" href="community.html">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">language</i>
+                        <span class="mdc-list-item__text">Community</span>
+                    </a>
+                    <a class="mdc-list-item" href="classes.html">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">class</i>
+                        <span class="mdc-list-item__text">Classes</span>
+                    </a>
+                    <a class="mdc-list-item" href="basket.html">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">shopping_basket</i>
+                        <span class="mdc-list-item__text">My Basket</span>
+                    </a>
+                </nav>
+
+            </div>
+            </div>
+            <main class="mdl-layout__content">
+
+              <div class="page-content" align="center" >
+
+                <div style="padding-top: 50px;">
+                  <img src="HEADSHOT.jpg" alt="Avatar" style="width: 250px; height: 250px; border-radius: 50%;">
+                </div>
+                <br>
+                <p style="font-size: 40px;">Name: Joshua Rudaitis</p>
+                <br>
+                <p style="font-size: 40px;">School: University of Florida</p>
+                <br>
+                <p style="font-size: 40px;">Year: 3rd Year Undergrad</p>
+                <br>
+                <p style="font-size: 40px;">Degree: Computer Engineering</p>
+                <br>
+                <div>
+                
+                  <p style="font-size: 40px;">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true" style="font-size: 50px;">verified_user</i>
+                    Connected Accounts:
+                  </p>
+                  <br>
+                  <a style="font-size: 40px;" href="https://www.linkedin.com/in/joshuarudaitis">LinkedIn</a>
+
+                </div>
+                    
+              </div>
+
+            <footer class="mdl-mini-footer" style="margin-top: 100px;">
+              <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">Rudaitis Software, © 2019</div>
+                <ul class="mdl-mini-footer__link-list">
+                  <li><a href="#" onclick="help();">Help</a></li>
+                  <li><a href="#" onclick="privacy();">Privacy & Terms</a></li>
+                  <li><a href="#" onclick="support();">Support</a></li>
+                </ul>
+              </div>
+            </footer>
+
+            </main>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="js/chart.js"></script>
+        <script srf="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script> <!-- Google Material Design -->
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> <!-- Material Design Lite -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+		<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+
+    		<script src="https://code.angularjs.org/1.4.3/angular.js"></script>
+    		<script src="js/app.js"></script>
+        <script src="js/regions_app.js"></script>
+    		<script src="js/controllers/regionController.js"></script>
+    		<script src="js/factories/regionFactory.js"></script>
+
+        <script>
+
+          function help() {
+
+            alert("This page provides information about your profile.");
+          }
+
+          function privacy() {
+
+            alert("Nothing is stored here, this is just mainly a mockup/prototype :)");
+          }
+
+          function support() {
+
+            alert("If you encounter any major issues, please contact Joshua Rudaitis.  If you are on this site you have my email ;)");
+          }
+
+
+        </script>
+    </body>
+
+
+</html>

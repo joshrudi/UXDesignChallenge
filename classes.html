@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>TweetData</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="shortcut icon" type="image/x-icon" href="" />
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"> <!-- Google Material Design -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Google Material Icons -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> <!-- Google Font -->
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"> <!-- Material Design Lite -->
+	     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+
+
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+
+              <span class="mdl-layout-title">Classes</span>
+
+              <div class="mdl-layout-spacer"></div>
+
+              <span class="mdl-layout-title" style="font-size: 15px;">Joshua R.</span>
+
+              <nav class="mdl-navigation">
+                  
+                <button class="mdl-button mdl-js-button mdl-button--icon">
+                  <i class="material-icons">account_circle</i>
+                </button>
+              </nav>
+            </div>
+          </header>
+          <div class="mdl-layout__drawer mdc-drawer">
+            <div class="mdc-drawer__header">
+                <h3 class="mdc-drawer__title">Navigation</h3>
+                <h6 class="mdc-drawer__subtitle">Rudaitis Software</h6>
+            </div>
+            <div class="mdc-drawer__content">
+
+                <nav class="mdc-list">
+                    <a class="mdc-list-item" href="index.html" aria-current="page">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">account_circle</i>
+                        <span class="mdc-list-item__text">Profile</span>
+                    </a>
+                    <a class="mdc-list-item" href="community.html">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">language</i>
+                        <span class="mdc-list-item__text">Community</span>
+                    </a>
+                    <a class="mdc-list-item mdc-list-item--activated" href="classes.html">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">class</i>
+                        <span class="mdc-list-item__text">Classes</span>
+                    </a>
+                    <a class="mdc-list-item" href="basket.html">
+                        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">shopping_basket</i>
+                        <span class="mdc-list-item__text">My Basket</span>
+                    </a>
+                </nav>
+
+            </div>
+            </div>
+            <main class="mdl-layout__content">
+
+              <div class="page-content" align="center">
+
+                <div style="font-size: 40px; padding-top: 75px;">
+
+                  <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search">
+                      <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+                    </form>
+                    <br>
+                    Results:
+                  </div>
+
+                </div>
+
+                <br>
+
+
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                    <i class="material-icons" style="font-size: 30px; color: blue;">class</i>
+                    <h2 class="mdl-card__title-text">EEL4712 Digital Logic</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <p>Avg Rating: 7/10</p>
+                    <p>21% Would Retake</p>
+                    <p style="float: center; font-size: 18px; color: red;"><i class="material-icons" style="font-size: 33px; color: red; float: center;">warning</i>
+                    </p>
+                  </div>
+                </div>
+
+                <br>
+
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                    <i class="material-icons" style="font-size: 30px; color: blue;">class</i>
+                    <h2 class="mdl-card__title-text">EEL3000 Intro to ECE</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <p>Avg Rating: 8/10</p>
+                    <p>72% Would Retake</p>
+                    <p style="float: center; font-size: 18px; color: red;"><i class="material-icons" style="font-size: 33px; color: green; float: center;">check</i>
+                    </p>
+                  </div>
+                </div>
+
+                <br>
+
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                    <i class="material-icons" style="font-size: 30px; color: blue;">class</i>
+                    <h2 class="mdl-card__title-text">EEL3764 Circuits 1</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <p>Avg Rating: 4/10</p>
+                    <p>13% Would Retake</p>
+                    <p style="float: center; font-size: 18px; color: red;"><i class="material-icons" style="font-size: 33px; color: red; float: center;">warning</i>
+                    </p>
+                  </div>
+                </div>
+
+                <br>
+
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                    <i class="material-icons" style="font-size: 30px; color: blue;">class</i>
+                    <h2 class="mdl-card__title-text">EEL4720 Reconfigurable Computing</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <p>Avg Rating: 9/10</p>
+                    <p>88% Would Retake</p>
+                    <p style="float: center; font-size: 18px; color: red;"><i class="material-icons" style="font-size: 33px; color: red; float: center;">warning</i>
+                    </p>
+                  </div>
+                </div>
+
+                
+
+              
+
+              <footer class="mdl-mini-footer" style="margin-top: 100px;">
+                <div class="mdl-mini-footer__left-section">
+                  <div class="mdl-logo">Rudaitis Software, © 2019</div>
+                  <ul class="mdl-mini-footer__link-list">
+                    <li><a href="#" onclick="help();">Help</a></li>
+                    <li><a href="#" onclick="privacy();">Privacy & Terms</a></li>
+                    <li><a href="#" onclick="support();">Support</a></li>
+                  </ul>
+                </div>
+              </footer>
+
+            </main>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script srf="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script> <!-- Google Material Design -->
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script> <!-- Material Design Lite -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    		<script src="https://code.angularjs.org/1.4.3/angular.js"></script>
+
+        <script>
+
+          function help() {
+
+            alert("This page provides information about classes.");
+          }
+
+          function privacy() {
+
+            alert("Nothing is stored here, this is just mainly a mockup/prototype :)");
+          }
+
+          function support() {
+
+            alert("If you encounter any major issues, please contact Joshua Rudaitis.  If you are on this site you have my email ;)");
+          }
+
+
+        </script>
+    </body>
+
+
+</html>
